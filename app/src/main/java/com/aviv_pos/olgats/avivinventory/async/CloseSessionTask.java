@@ -42,7 +42,7 @@ public class CloseSessionTask extends AsyncTask<Void, Void, Void> {
     @Override
     protected Void doInBackground(Void... params) {
             try {
-                DatabaseHandler.Settings  settings = new DatabaseHandler.Settings(mContext);
+                DatabaseHandler.Settings settings = new DatabaseHandler.Settings(mContext);
                 String str = settings.getValue("account");
                 if (str != null) {
                     int accountId = Integer.parseInt(str);
